@@ -4,6 +4,7 @@ import edu.puc.mecolab.concurrent.AtomicBankAccount;
 import edu.puc.mecolab.concurrent.BackoffLockBankAccount;
 import edu.puc.mecolab.concurrent.CLHLockBankAccount;
 import edu.puc.mecolab.concurrent.CompositeLockBankAccount;
+import edu.puc.mecolab.concurrent.FastPathCompositeLockBankAccount;
 import edu.puc.mecolab.concurrent.MonitorBankAccount;
 import edu.puc.mecolab.concurrent.PrimitiveLockBankAccount;
 import edu.puc.mecolab.concurrent.PrimitiveSynchronizedBankAccount;
@@ -28,12 +29,19 @@ public class DepositWithdrawal {
     private Semaphore mSemaphore;
 
     public DepositWithdrawal() {
-        // mBankAccount = new MonitorBankAccount(INITIAL_AMOUNT);
+        // Non-thread safe, just to show a baseline
+        // ---
         // mBankAccount = new UnsafeBankAccount(INITIAL_AMOUNT);
+
+        // Implementation through primitives provided by the JVM. Usually these are better than anything we can come up with.
+        // ---
+        // mBankAccount = new MonitorBankAccount(INITIAL_AMOUNT);
         // mBankAccount = new PrimitiveLockBankAccount(INITIAL_AMOUNT);
         // mBankAccount = new PrimitiveSynchronizedBankAccount(INITIAL_AMOUNT);
         // mBankAccount = new AtomicBankAccount(INITIAL_AMOUNT);
-        // mBankAccount = new PrimitiveSynchronizedBankAccount(INITIAL_AMOUNT);
+
+        // Illustration of the spin lock concept
+        // ---
         // mBankAccount = new TASLockBankAccount(INITIAL_AMOUNT);
         // mBankAccount = new TTASLockBankAccount(INITIAL_AMOUNT);
         // mBankAccount = new BackoffLockBankAccount(INITIAL_AMOUNT);
@@ -48,9 +56,10 @@ public class DepositWithdrawal {
         // ---
         // mBankAccount = new TimeoutLockBankAccount(INITIAL_AMOUNT);
 
-        // CompositeLock
+        // CompositeLock (high difficulty! this will be on the exam (¬‿¬) )
         // ---
-        mBankAccount = new CompositeLockBankAccount(INITIAL_AMOUNT);
+        // mBankAccount = new CompositeLockBankAccount(INITIAL_AMOUNT);
+        mBankAccount = new FastPathCompositeLockBankAccount(INITIAL_AMOUNT);
 
         mSemaphore = new Semaphore(- NUM_THREADS + 1);
 

@@ -39,7 +39,7 @@ public class CompositeLockBankAccount extends Account {
      * The reference to the last object of the waiting threads' virtual queue. Implemented as an {@link AtomicStampedReference}
      * in order to avoid the ABA problem.
      */
-    private AtomicStampedReference<QNode> mTail;
+    protected AtomicStampedReference<QNode> mTail;
 
     /**
      * A list of shared Node objects that allow access to the queue. A thread trying to get the lock gets assigned a
@@ -57,7 +57,7 @@ public class CompositeLockBankAccount extends Account {
      * The currently assigned Node (if any). Once assigned, it means this thread is either waiting for the lock through
      * spinning, or it has control of the lock and is currently accessing its critical section.
      */
-    private ThreadLocal<QNode> mStatus;
+    protected ThreadLocal<QNode> mStatus;
 
     /**
      * Local {@link Backoff} used for this implementation. Simply a minor optimization technique.
@@ -107,7 +107,13 @@ public class CompositeLockBankAccount extends Account {
         return mAmount;
     }
 
-    private boolean tryLock(int maxWait) {
+    /**
+     * Attempts to acquire the lock.
+     *
+     * @param maxWait The maximum amount of time a thread is allowed to wait before failing with a timeout.
+     * @return true if the lock was successfully acquired, false otherwise.
+     */
+    protected boolean tryLock(int maxWait) {
         long startTime = System.currentTimeMillis();
 
         Backoff backoff = mBackoff.get();
@@ -235,7 +241,10 @@ public class CompositeLockBankAccount extends Account {
         mStatus.set(node);
     }
 
-    private void unlock() {
+    /**
+     * Releases the lock.
+     */
+    protected void unlock() {
         QNode QNode = mStatus.get();
         QNode.mState.set(State.RELEASED);
         mStatus.set(null);
@@ -261,7 +270,7 @@ public class CompositeLockBankAccount extends Account {
         }
     }
 
-    private static class QNode {
+    protected static class QNode {
         private AtomicReference<State> mState;
         private QNode mPredecessor;
 
