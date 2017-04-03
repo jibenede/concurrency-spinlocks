@@ -9,6 +9,4 @@ public abstract class Account {
     public abstract void withdraw(int amount);
 
     public abstract int getAmount();
-
-    private void process() {}
 }
