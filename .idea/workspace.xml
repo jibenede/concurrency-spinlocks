@@ -2,41 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9611bfe3-733a-43f0-acd9-cb0ccb5b2989" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Pools.pptx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Spin Locks.pptx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/edu/puc/mecolab/pools/Main.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/edu/puc/mecolab/pools/ProducerConsumer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/edu/puc/mecolab/pools/concurrent/PartialBoundedQueue.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/edu/puc/mecolab/pools/concurrent/Pool.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/edu/puc/mecolab/pools/concurrent/UnsafePool.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/description.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/project-template.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/SpinLocks.iml" afterPath="$PROJECT_DIR$/Concurrent Programming 2017.iml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/edu/puc/mecolab/Account.java" afterPath="$PROJECT_DIR$/src/edu/puc/mecolab/spinlocks/Account.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/edu/puc/mecolab/DepositWithdrawal.java" afterPath="$PROJECT_DIR$/src/edu/puc/mecolab/spinlocks/DepositWithdrawal.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/edu/puc/mecolab/Main.java" afterPath="$PROJECT_DIR$/src/edu/puc/mecolab/spinlocks/Main.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/edu/puc/mecolab/concurrent/AtomicBankAccount.java" afterPath="$PROJECT_DIR$/src/edu/puc/mecolab/spinlocks/concurrent/AtomicBankAccount.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/edu/puc/mecolab/concurrent/BackoffLockBankAccount.java" afterPath="$PROJECT_DIR$/src/edu/puc/mecolab/spinlocks/concurrent/BackoffLockBankAccount.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/edu/puc/mecolab/concurrent/CLHLockBankAccount.java" afterPath="$PROJECT_DIR$/src/edu/puc/mecolab/spinlocks/concurrent/CLHLockBankAccount.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/edu/puc/mecolab/concurrent/CompositeLockBankAccount.java" afterPath="$PROJECT_DIR$/src/edu/puc/mecolab/spinlocks/concurrent/CompositeLockBankAccount.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/edu/puc/mecolab/concurrent/FastPathCompositeLockBankAccount.java" afterPath="$PROJECT_DIR$/src/edu/puc/mecolab/spinlocks/concurrent/FastPathCompositeLockBankAccount.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/edu/puc/mecolab/concurrent/MonitorBankAccount.java" afterPath="$PROJECT_DIR$/src/edu/puc/mecolab/spinlocks/concurrent/MonitorBankAccount.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/edu/puc/mecolab/concurrent/PaddedQueueLockBankAccount.java" afterPath="$PROJECT_DIR$/src/edu/puc/mecolab/spinlocks/concurrent/PaddedQueueLockBankAccount.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/edu/puc/mecolab/concurrent/PrimitiveLockBankAccount.java" afterPath="$PROJECT_DIR$/src/edu/puc/mecolab/spinlocks/concurrent/PrimitiveLockBankAccount.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/edu/puc/mecolab/concurrent/PrimitiveSynchronizedBankAccount.java" afterPath="$PROJECT_DIR$/src/edu/puc/mecolab/spinlocks/concurrent/PrimitiveSynchronizedBankAccount.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/edu/puc/mecolab/concurrent/PrimitiveSynchronizedMethodBankAccount.java" afterPath="$PROJECT_DIR$/src/edu/puc/mecolab/spinlocks/concurrent/PrimitiveSynchronizedMethodBankAccount.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/edu/puc/mecolab/concurrent/QueueLockBankAccount.java" afterPath="$PROJECT_DIR$/src/edu/puc/mecolab/spinlocks/concurrent/QueueLockBankAccount.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/edu/puc/mecolab/concurrent/TASLockBankAccount.java" afterPath="$PROJECT_DIR$/src/edu/puc/mecolab/spinlocks/concurrent/TASLockBankAccount.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/edu/puc/mecolab/concurrent/TTASLockBankAccount.java" afterPath="$PROJECT_DIR$/src/edu/puc/mecolab/spinlocks/concurrent/TTASLockBankAccount.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/edu/puc/mecolab/concurrent/TimeoutLockBankAccount.java" afterPath="$PROJECT_DIR$/src/edu/puc/mecolab/spinlocks/concurrent/TimeoutLockBankAccount.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/edu/puc/mecolab/concurrent/UnsafeBankAccount.java" afterPath="$PROJECT_DIR$/src/edu/puc/mecolab/spinlocks/concurrent/UnsafeBankAccount.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/edu/puc/mecolab/pools/concurrent/PoolEmptyException.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/edu/puc/mecolab/pools/concurrent/UnboundedTotalLockFreeQueue.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/edu/puc/mecolab/pools/concurrent/UnboundedTotalQueue.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pools.pptx" afterPath="$PROJECT_DIR$/Pools.pptx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/edu/puc/mecolab/pools/ProducerConsumer.java" afterPath="$PROJECT_DIR$/src/edu/puc/mecolab/pools/ProducerConsumer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/edu/puc/mecolab/pools/concurrent/Pool.java" afterPath="$PROJECT_DIR$/src/edu/puc/mecolab/pools/concurrent/Pool.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -52,7 +24,7 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="PaddedQueueLockBankAccount.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="PaddedQueueLockBankAccount.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/edu/puc/mecolab/spinlocks/concurrent/PaddedQueueLockBankAccount.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="294">
@@ -66,7 +38,96 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="UnboundedTotalQueue.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/edu/puc/mecolab/pools/concurrent/UnboundedTotalQueue.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="23" column="45" lean-forward="false" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="45" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PoolEmptyException.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/edu/puc/mecolab/pools/concurrent/PoolEmptyException.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="49" lean-forward="false" selection-start-line="5" selection-start-column="49" selection-end-line="5" selection-end-column="49" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DepositWithdrawal.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/edu/puc/mecolab/spinlocks/DepositWithdrawal.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="23" column="13" lean-forward="false" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProducerConsumer.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/edu/puc/mecolab/pools/ProducerConsumer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="20" column="52" lean-forward="false" selection-start-line="20" selection-start-column="52" selection-end-line="20" selection-end-column="52" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Pool.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/edu/puc/mecolab/pools/concurrent/Pool.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="17" lean-forward="false" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PartialBoundedQueue.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/edu/puc/mecolab/pools/concurrent/PartialBoundedQueue.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="720">
+              <caret line="51" column="12" lean-forward="false" selection-start-line="51" selection-start-column="12" selection-end-line="51" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UnboundedTotalLockFreeQueue.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/edu/puc/mecolab/pools/concurrent/UnboundedTotalLockFreeQueue.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="17" column="26" lean-forward="false" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UnsafePool.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/edu/puc/mecolab/pools/concurrent/UnsafePool.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -82,6 +143,17 @@
         <entry key="$PROJECT_DIR$/../iosched-master" value="5628612280000" />
         <entry key="$PROJECT_DIR$/../temp/ChatFirebase" value="4338148992000" />
       </map>
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/edu/puc/mecolab/pools/concurrent/PoolEmptyException.java" />
+        <option value="$PROJECT_DIR$/src/edu/puc/mecolab/pools/concurrent/UnboundedTotalQueue.java" />
+        <option value="$PROJECT_DIR$/src/edu/puc/mecolab/pools/concurrent/Pool.java" />
+        <option value="$PROJECT_DIR$/src/edu/puc/mecolab/pools/concurrent/UnboundedTotalLockFreeQueue.java" />
+        <option value="$PROJECT_DIR$/src/edu/puc/mecolab/pools/ProducerConsumer.java" />
+      </list>
     </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
@@ -167,6 +239,32 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Concurrent Programming 2017" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Concurrent Programming 2017" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mecolab" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pools" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="concurrent" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="PackagesPane" />
@@ -194,6 +292,7 @@
     <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
     <property name="js.eslint.eslintPackage" value="" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
+    <property name="GO_FMT" value="false" />
   </component>
   <component name="RunManager" selected="Application.Main">
     <configuration default="false" name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -694,12 +793,20 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1491249716924</updated>
-      <workItem from="1491249720339" duration="56000" />
+      <workItem from="1491249720339" duration="3533000" />
     </task>
+    <task id="LOCAL-00001" summary="Restructured project to include multiple topics. Added first class for concurrent pools.">
+      <created>1491249816160</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1491249816160</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="56000" />
+    <option name="totallyTimeSpent" value="3533000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="978" extended-state="6" />
@@ -714,19 +821,19 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3295711" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3295711" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24969475" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24969475" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39954853" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -742,8 +849,22 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Restructured project to include multiple topics. Added first class for concurrent pools." />
+    <option name="LAST_COMMIT_MESSAGE" value="Restructured project to include multiple topics. Added first class for concurrent pools." />
+  </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/edu/puc/mecolab/pools/ProducerConsumer.java</url>
+          <line>100</line>
+          <properties />
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="6" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="antWorkspaceConfiguration">
@@ -759,6 +880,72 @@
             <element signature="imports" expanded="false" />
             <element signature="e#1247#1248#0" expanded="false" />
             <element signature="e#1277#1278#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/puc/mecolab/spinlocks/DepositWithdrawal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="23" column="13" lean-forward="false" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/puc/mecolab/pools/concurrent/PartialBoundedQueue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="51" column="12" lean-forward="false" selection-start-line="51" selection-start-column="12" selection-end-line="51" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/puc/mecolab/pools/concurrent/UnsafePool.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/puc/mecolab/pools/concurrent/PoolEmptyException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="49" lean-forward="false" selection-start-line="5" selection-start-column="49" selection-end-line="5" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/puc/mecolab/pools/concurrent/Pool.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="17" lean-forward="false" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/puc/mecolab/pools/concurrent/UnboundedTotalQueue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="23" column="45" lean-forward="false" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/puc/mecolab/pools/concurrent/UnboundedTotalLockFreeQueue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="26" lean-forward="false" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/puc/mecolab/pools/ProducerConsumer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="20" column="52" lean-forward="false" selection-start-line="20" selection-start-column="52" selection-end-line="20" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

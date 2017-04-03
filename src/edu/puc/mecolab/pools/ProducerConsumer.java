@@ -2,6 +2,9 @@ package edu.puc.mecolab.pools;
 
 import edu.puc.mecolab.pools.concurrent.PartialBoundedQueue;
 import edu.puc.mecolab.pools.concurrent.Pool;
+import edu.puc.mecolab.pools.concurrent.PoolEmptyException;
+import edu.puc.mecolab.pools.concurrent.UnboundedTotalLockFreeQueue;
+import edu.puc.mecolab.pools.concurrent.UnboundedTotalQueue;
 import edu.puc.mecolab.pools.concurrent.UnsafePool;
 
 import java.util.Random;
@@ -9,7 +12,9 @@ import java.util.concurrent.Semaphore;
 import java.util.concurrent.atomic.AtomicInteger;
 
 /**
- * Created by jose on 4/3/17.
+ * A standard producer-consumer implementation. Produced objects are expected to be used once only. Make sure the number
+ * of produced items is higher than the number of consumed items. In rendezvous implementations, consumers must be
+ * equal to producers.
  */
 public class ProducerConsumer {
     private static final int NUMBER_OF_PRODUCERS = 5;
@@ -26,8 +31,10 @@ public class ProducerConsumer {
 
     public ProducerConsumer() {
 
-        mShinyObjectPool = new UnsafePool<ShinyObject>(ShinyObject[].class, CAPACITY);
+        // mShinyObjectPool = new UnsafePool<ShinyObject>(ShinyObject[].class, CAPACITY);
         // mShinyObjectPool = new PartialBoundedQueue<>(CAPACITY);
+        // mShinyObjectPool = new UnboundedTotalQueue<>();
+        mShinyObjectPool = new UnboundedTotalLockFreeQueue<>();
 
         mSemaphore = new Semaphore(- (NUMBER_OF_CONSUMERS + NUMBER_OF_PRODUCERS) + 1);
     }
@@ -71,14 +78,23 @@ public class ProducerConsumer {
 
         @Override
         public void run() {
-            for (int i = 0; i < ITERATIONS; i++) {
+            for (int i = 0; i < ITERATIONS;) {
                 if (mExecutorType == ExecutorType.CONSUMER) {
-                    ShinyObject object = mShinyObjectPool.take();
-                    if (object != null) {
-                        object.use();
-                    } else {
-                        mNumberOfNullObjects.incrementAndGet();
+                    ShinyObject object = null;
+                    try {
+                        object = mShinyObjectPool.take();
+
+                        if (object != null) {
+                            object.use();
+                        } else {
+                            // If we get inside here, something somewhere went terribly wrong!
+                            mNumberOfNullObjects.incrementAndGet();
+                        }
+                    } catch (PoolEmptyException e) {
+                        // If we have an exception, we retry the operation
+                        continue;
                     }
+
 
                 } else {
                     ShinyObject object = new ShinyObject();
@@ -87,6 +103,8 @@ public class ProducerConsumer {
 
                 // Uncomment for debugging purposes
                 // if (i % 100 == 0) System.out.println(i);
+
+                i++;
             }
 
             mSemaphore.release();
