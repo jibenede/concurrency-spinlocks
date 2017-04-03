@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="985f3573-da92-4363-808b-43c5c7d6052f" name="Default" comment="Initial Commit.">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/edu/puc/mecolab/concurrent/FastPathCompositeLockBankAccount.java" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SpinLocks/edu/puc/mecolab/Account.class" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SpinLocks/edu/puc/mecolab/DepositWithdrawal$1.class" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SpinLocks/edu/puc/mecolab/DepositWithdrawal$Executor.class" afterPath="" />
@@ -32,10 +31,7 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SpinLocks/edu/puc/mecolab/concurrent/TimeoutLockBankAccount$Status.class" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SpinLocks/edu/puc/mecolab/concurrent/TimeoutLockBankAccount.class" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/SpinLocks/edu/puc/mecolab/concurrent/UnsafeBankAccount.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/edu/puc/mecolab/DepositWithdrawal.java" afterPath="$PROJECT_DIR$/src/edu/puc/mecolab/DepositWithdrawal.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/edu/puc/mecolab/concurrent/CompositeLockBankAccount.java" afterPath="$PROJECT_DIR$/src/edu/puc/mecolab/concurrent/CompositeLockBankAccount.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -94,8 +90,8 @@
       <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+            <state relative-caret-position="210">
+              <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -791,7 +787,7 @@
       <workItem from="1487860568750" duration="27034000" />
       <workItem from="1490814345177" duration="44000" />
       <workItem from="1490814471468" duration="594000" />
-      <workItem from="1491229279308" duration="11991000" />
+      <workItem from="1491229279308" duration="12279000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit.">
       <created>1491237156401</created>
@@ -800,15 +796,22 @@
       <option name="project" value="LOCAL" />
       <updated>1491237156401</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Fast path composite algorithm added.">
+      <created>1491243674201</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1491243674201</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39663000" />
+    <option name="totallyTimeSpent" value="39951000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="975" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -819,7 +822,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -849,7 +852,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial Commit." />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial Commit." />
+    <MESSAGE value="Fast path composite algorithm added." />
+    <option name="LAST_COMMIT_MESSAGE" value="Fast path composite algorithm added." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1215,8 +1219,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+        <state relative-caret-position="210">
+          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="4" />
           <folding />
         </state>
       </provider>
