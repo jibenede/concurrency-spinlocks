@@ -2,13 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9611bfe3-733a-43f0-acd9-cb0ccb5b2989" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/edu/puc/mecolab/pools/concurrent/PoolEmptyException.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/edu/puc/mecolab/pools/concurrent/UnboundedTotalLockFreeQueue.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/edu/puc/mecolab/pools/concurrent/UnboundedTotalQueue.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pools.pptx" afterPath="$PROJECT_DIR$/Pools.pptx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/edu/puc/mecolab/pools/concurrent/SynchronizedQueue.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/edu/puc/mecolab/pools/ProducerConsumer.java" afterPath="$PROJECT_DIR$/src/edu/puc/mecolab/pools/ProducerConsumer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/edu/puc/mecolab/pools/concurrent/Pool.java" afterPath="$PROJECT_DIR$/src/edu/puc/mecolab/pools/concurrent/Pool.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/edu/puc/mecolab/pools/concurrent/PartialBoundedQueue.java" afterPath="$PROJECT_DIR$/src/edu/puc/mecolab/pools/concurrent/PartialBoundedQueue.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/edu/puc/mecolab/pools/concurrent/UnboundedTotalLockFreeQueue.java" afterPath="$PROJECT_DIR$/src/edu/puc/mecolab/pools/concurrent/UnboundedTotalLockFreeQueue.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/edu/puc/mecolab/pools/concurrent/UnboundedTotalQueue.java" afterPath="$PROJECT_DIR$/src/edu/puc/mecolab/pools/concurrent/UnboundedTotalQueue.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -38,11 +37,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UnboundedTotalQueue.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="UnboundedTotalQueue.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/edu/puc/mecolab/pools/concurrent/UnboundedTotalQueue.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="23" column="45" lean-forward="false" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="45" />
+            <state relative-caret-position="90">
+              <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -68,11 +67,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ProducerConsumer.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ProducerConsumer.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/edu/puc/mecolab/pools/ProducerConsumer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="20" column="52" lean-forward="false" selection-start-line="20" selection-start-column="52" selection-end-line="20" selection-end-column="52" />
+            <state relative-caret-position="60">
+              <caret line="37" column="11" lean-forward="false" selection-start-line="37" selection-start-column="11" selection-end-line="37" selection-end-column="11" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SynchronizedQueue.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/edu/puc/mecolab/pools/concurrent/SynchronizedQueue.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="60" lean-forward="false" selection-start-line="9" selection-start-column="60" selection-end-line="9" selection-end-column="60" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -93,9 +104,11 @@
       <file leaf-file-name="PartialBoundedQueue.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/edu/puc/mecolab/pools/concurrent/PartialBoundedQueue.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="720">
-              <caret line="51" column="12" lean-forward="false" selection-start-line="51" selection-start-column="12" selection-end-line="51" selection-end-column="32" />
-              <folding />
+            <state relative-caret-position="225">
+              <caret line="24" column="32" lean-forward="false" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
+              <folding>
+                <marker date="1491256530000" expanded="true" signature="188:860" ph="/**...*/" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -103,8 +116,8 @@
       <file leaf-file-name="UnboundedTotalLockFreeQueue.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/edu/puc/mecolab/pools/concurrent/UnboundedTotalLockFreeQueue.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="26" lean-forward="false" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
+            <state relative-caret-position="-90">
+              <caret line="10" column="11" lean-forward="false" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
               <folding />
             </state>
           </provider>
@@ -113,8 +126,8 @@
       <file leaf-file-name="UnsafePool.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/edu/puc/mecolab/pools/concurrent/UnsafePool.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+            <state relative-caret-position="180">
+              <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -149,9 +162,11 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/edu/puc/mecolab/pools/concurrent/PoolEmptyException.java" />
-        <option value="$PROJECT_DIR$/src/edu/puc/mecolab/pools/concurrent/UnboundedTotalQueue.java" />
         <option value="$PROJECT_DIR$/src/edu/puc/mecolab/pools/concurrent/Pool.java" />
         <option value="$PROJECT_DIR$/src/edu/puc/mecolab/pools/concurrent/UnboundedTotalLockFreeQueue.java" />
+        <option value="$PROJECT_DIR$/src/edu/puc/mecolab/pools/concurrent/SynchronizedQueue.java" />
+        <option value="$PROJECT_DIR$/src/edu/puc/mecolab/pools/concurrent/PartialBoundedQueue.java" />
+        <option value="$PROJECT_DIR$/src/edu/puc/mecolab/pools/concurrent/UnboundedTotalQueue.java" />
         <option value="$PROJECT_DIR$/src/edu/puc/mecolab/pools/ProducerConsumer.java" />
       </list>
     </option>
@@ -793,7 +808,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1491249716924</updated>
-      <workItem from="1491249720339" duration="3533000" />
+      <workItem from="1491249720339" duration="6425000" />
     </task>
     <task id="LOCAL-00001" summary="Restructured project to include multiple topics. Added first class for concurrent pools.">
       <created>1491249816160</created>
@@ -802,15 +817,22 @@
       <option name="project" value="LOCAL" />
       <updated>1491249816160</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Added unbounded total concurrent queues.">
+      <created>1491253289112</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1491253289112</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3533000" />
+    <option name="totallyTimeSpent" value="6425000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="978" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -827,7 +849,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24969475" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24969475" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -851,18 +873,11 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Restructured project to include multiple topics. Added first class for concurrent pools." />
-    <option name="LAST_COMMIT_MESSAGE" value="Restructured project to include multiple topics. Added first class for concurrent pools." />
+    <MESSAGE value="Added unbounded total concurrent queues." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added unbounded total concurrent queues." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/edu/puc/mecolab/pools/ProducerConsumer.java</url>
-          <line>100</line>
-          <properties />
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
       <option name="time" value="6" />
     </breakpoint-manager>
     <watches-manager />
@@ -892,18 +907,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/edu/puc/mecolab/pools/concurrent/PartialBoundedQueue.java">
+    <entry file="file://$PROJECT_DIR$/src/edu/puc/mecolab/pools/concurrent/Pool.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="51" column="12" lean-forward="false" selection-start-line="51" selection-start-column="12" selection-end-line="51" selection-end-column="32" />
+        <state relative-caret-position="75">
+          <caret line="5" column="17" lean-forward="false" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/edu/puc/mecolab/pools/concurrent/UnsafePool.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        <state relative-caret-position="180">
+          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -916,37 +931,49 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/edu/puc/mecolab/pools/concurrent/Pool.java">
+    <entry file="file://$PROJECT_DIR$/src/edu/puc/mecolab/pools/concurrent/PartialBoundedQueue.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="17" lean-forward="false" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+        <state relative-caret-position="225">
+          <caret line="24" column="32" lean-forward="false" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
+          <folding>
+            <marker date="1491256530000" expanded="true" signature="188:860" ph="/**...*/" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/puc/mecolab/pools/ProducerConsumer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="37" column="11" lean-forward="false" selection-start-line="37" selection-start-column="11" selection-end-line="37" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/puc/mecolab/pools/concurrent/SynchronizedQueue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="60" lean-forward="false" selection-start-line="9" selection-start-column="60" selection-end-line="9" selection-end-column="60" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/puc/mecolab/pools/concurrent/UnboundedTotalLockFreeQueue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-90">
+          <caret line="10" column="11" lean-forward="false" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/edu/puc/mecolab/pools/concurrent/UnboundedTotalQueue.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="23" column="45" lean-forward="false" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="45" />
+        <state relative-caret-position="90">
+          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/edu/puc/mecolab/pools/concurrent/UnboundedTotalLockFreeQueue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="26" lean-forward="false" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/edu/puc/mecolab/pools/ProducerConsumer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="20" column="52" lean-forward="false" selection-start-line="20" selection-start-column="52" selection-end-line="20" selection-end-column="52" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>

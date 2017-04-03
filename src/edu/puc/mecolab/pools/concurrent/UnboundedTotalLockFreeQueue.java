@@ -7,8 +7,8 @@ import java.util.concurrent.atomic.AtomicReference;
  */
 public class UnboundedTotalLockFreeQueue<T> implements Pool<T> {
 
-    private volatile AtomicReference<Node<T>> mHead;
-    private volatile AtomicReference<Node<T>> mTail;
+    private AtomicReference<Node<T>> mHead;
+    private AtomicReference<Node<T>> mTail;
 
     public UnboundedTotalLockFreeQueue() {
         Node<T> sentinel = new Node<T>(null);

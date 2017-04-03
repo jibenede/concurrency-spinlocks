@@ -5,9 +5,14 @@ import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.ReentrantLock;
 
 /**
- * Implementation of a partial bounded concurrent queue. Supports at most one consumer and producer concurrently.
+ * Implementation of a partial bounded concurrent queue.
  * Thread blocking and resuming when conditions are not fulfilled are implement through {@link Condition} objects
- * (which are basically monitors, readers should study its javadoc documentation before studying this code).
+ * (which are basically monitors, readers should study its javadoc documentation before studying this code).<br>
+ * <br>
+ * For this implementation, the queue is implemented as a linked list, in which this class only has references to the
+ * head and tail of the list. Supports at most one consumer and producer concurrently. By ensuring consumption only
+ * affects the head, and production only affects the tail, we enable both operations to be run simultaneously, as long as
+ * head != tail.
  */
 public class PartialBoundedQueue<T> implements Pool<T> {
     private ReentrantLock mEnqueueLock;
@@ -19,12 +24,17 @@ public class PartialBoundedQueue<T> implements Pool<T> {
     private AtomicInteger mSize;
     private final int mCapacity;
 
-    private volatile Node<T> mHead;
-    private volatile Node<T> mTail;
+    private Node<T> mHead;
+    private Node<T> mTail;
 
     public PartialBoundedQueue(int capacity) {
         mCapacity = capacity;
-        mHead = new Node<T>(null);
+
+        // In its initial state, both head and tail are set to an arbitrary value we call a sentinel. Its value is
+        // meaningless and should not be considered as a valid element of the queue, but it does a help with
+        // the queue's implementation later. The head always points towards the sentinel, the first valid value of
+        // this queue is actually the sentinel's successor!
+        mHead = new Node<>(null);
         mTail = mHead;
 
         mSize = new AtomicInteger(0);

@@ -3,6 +3,7 @@ package edu.puc.mecolab.pools;
 import edu.puc.mecolab.pools.concurrent.PartialBoundedQueue;
 import edu.puc.mecolab.pools.concurrent.Pool;
 import edu.puc.mecolab.pools.concurrent.PoolEmptyException;
+import edu.puc.mecolab.pools.concurrent.SynchronizedQueue;
 import edu.puc.mecolab.pools.concurrent.UnboundedTotalLockFreeQueue;
 import edu.puc.mecolab.pools.concurrent.UnboundedTotalQueue;
 import edu.puc.mecolab.pools.concurrent.UnsafePool;
@@ -17,8 +18,8 @@ import java.util.concurrent.atomic.AtomicInteger;
  * equal to producers.
  */
 public class ProducerConsumer {
-    private static final int NUMBER_OF_PRODUCERS = 5;
-    private static final int NUMBER_OF_CONSUMERS = 5;
+    private static final int NUMBER_OF_PRODUCERS = 10;
+    private static final int NUMBER_OF_CONSUMERS = 10;
     private static final int ITERATIONS = 1000000;
     private static final int CAPACITY = 100;
 
@@ -34,7 +35,8 @@ public class ProducerConsumer {
         // mShinyObjectPool = new UnsafePool<ShinyObject>(ShinyObject[].class, CAPACITY);
         // mShinyObjectPool = new PartialBoundedQueue<>(CAPACITY);
         // mShinyObjectPool = new UnboundedTotalQueue<>();
-        mShinyObjectPool = new UnboundedTotalLockFreeQueue<>();
+        // mShinyObjectPool = new UnboundedTotalLockFreeQueue<>();
+        // mShinyObjectPool = new SynchronizedQueue<>();
 
         mSemaphore = new Semaphore(- (NUMBER_OF_CONSUMERS + NUMBER_OF_PRODUCERS) + 1);
     }
