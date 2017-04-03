@@ -1,21 +1,22 @@
-package edu.puc.mecolab;
-
-import edu.puc.mecolab.concurrent.AtomicBankAccount;
-import edu.puc.mecolab.concurrent.BackoffLockBankAccount;
-import edu.puc.mecolab.concurrent.CLHLockBankAccount;
-import edu.puc.mecolab.concurrent.CompositeLockBankAccount;
-import edu.puc.mecolab.concurrent.FastPathCompositeLockBankAccount;
-import edu.puc.mecolab.concurrent.MonitorBankAccount;
-import edu.puc.mecolab.concurrent.PrimitiveLockBankAccount;
-import edu.puc.mecolab.concurrent.PrimitiveSynchronizedBankAccount;
-import edu.puc.mecolab.concurrent.QueueLockBankAccount;
-import edu.puc.mecolab.concurrent.TASLockBankAccount;
-import edu.puc.mecolab.concurrent.TTASLockBankAccount;
-import edu.puc.mecolab.concurrent.TimeoutLockBankAccount;
-import edu.puc.mecolab.concurrent.UnsafeBankAccount;
+package edu.puc.mecolab.spinlocks;
 
 import java.util.Random;
 import java.util.concurrent.Semaphore;
+
+import edu.puc.mecolab.spinlocks.concurrent.AtomicBankAccount;
+import edu.puc.mecolab.spinlocks.concurrent.BackoffLockBankAccount;
+import edu.puc.mecolab.spinlocks.concurrent.CLHLockBankAccount;
+import edu.puc.mecolab.spinlocks.concurrent.CompositeLockBankAccount;
+import edu.puc.mecolab.spinlocks.concurrent.FastPathCompositeLockBankAccount;
+import edu.puc.mecolab.spinlocks.concurrent.MonitorBankAccount;
+import edu.puc.mecolab.spinlocks.concurrent.PaddedQueueLockBankAccount;
+import edu.puc.mecolab.spinlocks.concurrent.PrimitiveLockBankAccount;
+import edu.puc.mecolab.spinlocks.concurrent.PrimitiveSynchronizedBankAccount;
+import edu.puc.mecolab.spinlocks.concurrent.QueueLockBankAccount;
+import edu.puc.mecolab.spinlocks.concurrent.TASLockBankAccount;
+import edu.puc.mecolab.spinlocks.concurrent.TTASLockBankAccount;
+import edu.puc.mecolab.spinlocks.concurrent.TimeoutLockBankAccount;
+import edu.puc.mecolab.spinlocks.concurrent.UnsafeBankAccount;
 
 /**
  * Created by jose on 2/23/17.
@@ -52,7 +53,7 @@ public class DepositWithdrawal {
         // mBankAccount = new PaddedQueueLockBankAccount(INITIAL_AMOUNT);
         // mBankAccount = new CLHLockBankAccount(INITIAL_AMOUNT);
 
-        // Added timeout
+        // Queue locks that sleep after failing to obtain the lock before a timeout elapses
         // ---
         // mBankAccount = new TimeoutLockBankAccount(INITIAL_AMOUNT);
 

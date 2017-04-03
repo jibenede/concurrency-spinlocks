@@ -1,4 +1,4 @@
-package edu.puc.mecolab;
+package edu.puc.mecolab.spinlocks;
 
 public class Main {
 

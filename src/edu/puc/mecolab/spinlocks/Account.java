@@ -1,4 +1,4 @@
-package edu.puc.mecolab;
+package edu.puc.mecolab.spinlocks;
 
 /**
  * Created by jose on 2/23/17.

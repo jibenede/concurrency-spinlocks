@@ -1,6 +1,6 @@
-package edu.puc.mecolab.concurrent;
+package edu.puc.mecolab.spinlocks.concurrent;
 
-import edu.puc.mecolab.Account;
+import edu.puc.mecolab.spinlocks.Account;
 
 /**
  * Non thread-safe implementation of a bank account. Will fail miserably in concurrent scenarios.

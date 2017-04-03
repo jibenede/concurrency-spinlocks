@@ -1,8 +1,7 @@
-package edu.puc.mecolab.concurrent;
+package edu.puc.mecolab.spinlocks.concurrent;
 
-import edu.puc.mecolab.Account;
+import edu.puc.mecolab.spinlocks.Account;
 
-import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.concurrent.locks.ReentrantLock;
 
 /**

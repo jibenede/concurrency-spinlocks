@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/SpinLocks.iml" filepath="$PROJECT_DIR$/SpinLocks.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Concurrent Programming 2017.iml" filepath="$PROJECT_DIR$/Concurrent Programming 2017.iml" />
     </modules>
   </component>
 </project>

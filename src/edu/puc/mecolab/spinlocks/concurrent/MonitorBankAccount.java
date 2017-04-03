@@ -1,8 +1,6 @@
-package edu.puc.mecolab.concurrent;
+package edu.puc.mecolab.spinlocks.concurrent;
 
-import edu.puc.mecolab.Account;
-
-import java.util.concurrent.atomic.AtomicBoolean;
+import edu.puc.mecolab.spinlocks.Account;
 
 /**
  * Standard locking using monitors using Java's wait/notify mechanism. Should perform worse under multi-core architectures

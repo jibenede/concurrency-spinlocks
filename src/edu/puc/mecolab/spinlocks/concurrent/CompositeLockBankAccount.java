@@ -1,12 +1,8 @@
-package edu.puc.mecolab.concurrent;
+package edu.puc.mecolab.spinlocks.concurrent;
 
-import edu.puc.mecolab.Account;
+import edu.puc.mecolab.spinlocks.Account;
 
-import java.sql.Time;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Random;
-import java.util.Stack;
 import java.util.concurrent.TimeoutException;
 import java.util.concurrent.atomic.AtomicReference;
 import java.util.concurrent.atomic.AtomicStampedReference;

@@ -1,4 +1,4 @@
-package edu.puc.mecolab.concurrent;
+package edu.puc.mecolab.spinlocks.concurrent;
 
 /**
  * A composite lock optimized to perform better in uncontended scenarios. When retrieving the lock, if no node is found
